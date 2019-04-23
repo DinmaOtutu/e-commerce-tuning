@@ -1,0 +1,54 @@
+{
+  "name": "e-commerce-tuning",
+  "version": "1.0.0",
+  "description": "An e-commerce platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/bin/www.js",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "babel src -d dist",
+    "dev": "nodemon --watch src --delay 250ms --exec babel-node src/bin/www.js --ignore tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DinmaOtutu/e-commerce-tuning.git"
+  },
+  "keywords": [
+    "e-commerce"
+  ],
+  "author": "DinmaOtutu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DinmaOtutu/e-commerce-tuning/issues"
+  },
+  "homepage": "https://github.com/DinmaOtutu/e-commerce-tuning#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "eslint": "^5.15.2",
+    "nodemon": "^1.18.10",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "helmet": "^3.16.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.18.11",
+    "regenerator-runtime": "^0.13.2",
+    "sequelize": "^5.7.4",
+    "sequelize-cli": "^5.4.0",
+    "winston": "^3.2.1"
+  }
+}

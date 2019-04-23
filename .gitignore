@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# Log file
+e-commerce.log
+
+# build output
+dist
+
+# dotenv file
+.env
